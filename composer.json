@@ -52,6 +52,12 @@
             ]
         }
     },
+    "repositories":[
+        {
+            "type": "vcs",
+            "url":  "https://github.com/clickclickdrive/eloquence-hookable"
+        }
+    ],
     "minimum-stability": "stable",
     "scripts": {
         "test": "phpunit && ./vendor/bin/phpcs src --standard=psr2 --report=diff --colors",
