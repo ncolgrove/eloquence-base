@@ -101,6 +101,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      * @param  string  $key
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($key)
     {
         return array_key_exists($key, $this->columns);
