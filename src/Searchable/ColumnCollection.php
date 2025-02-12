@@ -112,6 +112,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      * @param  string $key
      * @return Column
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($key)
     {
         return $this->columns[$key];
@@ -124,6 +125,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      * @param Column $column
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($key, $column)
     {
         $this->add($column);
@@ -135,6 +137,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      * @param  string $key
      * @return Column
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($key)
     {
         unset($this->columns[$key]);
@@ -145,6 +148,7 @@ class ColumnCollection implements ArrayAccess, IteratorAggregate
      *
      * @return ArrayIterator
      */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new ArrayIterator($this->columns);
