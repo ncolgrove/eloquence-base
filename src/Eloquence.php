@@ -160,7 +160,7 @@ trait Eloquence
      */
     public function newEloquentBuilder($query)
     {
-        return new Builder($query);
+        return new \Sofa\Eloquence\Builder($query);
     }
 
     /**
